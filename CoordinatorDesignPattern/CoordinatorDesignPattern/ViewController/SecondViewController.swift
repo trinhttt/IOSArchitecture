@@ -7,8 +7,8 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, Coordinating {
-    var coordinator: Coordinator?
+class SecondViewController: UIViewController {
+    var coordinator: MainCoordinator?
     
 
     override func viewDidLoad() {

@@ -11,8 +11,11 @@ enum Event {
     case buttonTapped
 }
 protocol Coordinator {
+    // not useful now
+    var childCoordinators: [Coordinator] { get set }
+
     var navigationController: UINavigationController? { get set }
-    func eventOccurred(with type: Event)
+//    func eventOccurred(with type: Event)
     func start()
 }
 

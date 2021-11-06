@@ -7,8 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, Coordinating {
-    var coordinator: Coordinator?
+class ViewController: UIViewController {
+    var coordinator: MainCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +26,8 @@ class ViewController: UIViewController, Coordinating {
     
     @objc func didTapButton() {
         print("didTapButton")
-        coordinator?.eventOccurred(with: .buttonTapped)
+        coordinator?.goToTheSecondView()
+
     }
 
 }

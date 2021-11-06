@@ -8,23 +8,36 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
-    
+    var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController?
     
-    func eventOccurred(with type: Event) {
-        switch type {
-        
-        case .buttonTapped:
-            print("buttonTapped")
-            var vc: UIViewController & Coordinating = SecondViewController()
-            vc.coordinator = self
-            navigationController?.pushViewController(vc, animated: true)
-        }
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    // Way 1
+    //    func eventOccurred(with type: Event) {
+    //        switch type {
+    //
+    //        case .buttonTapped:
+    //            print("buttonTapped")
+    //            var vc: UIViewController & Coordinating = SecondViewController()
+    //            vc.coordinator = self
+    //            navigationController?.pushViewController(vc, animated: true)
+    //        }
+    //    }
+    
+    // Way 2
+    func goToTheSecondView() {
+        print("goToTheSecondView")
+        let vc = SecondViewController()
+        vc.coordinator = self
+        navigationController?.pushViewController(vc, animated: true)
     }
     
     func start() {
         print("start")
-        var vc: UIViewController & Coordinating = ViewController()
+        let vc = ViewController()
         // Important!
         vc.coordinator = self
         navigationController?.setViewControllers([vc], animated: false )
