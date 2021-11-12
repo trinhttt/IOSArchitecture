@@ -8,10 +8,12 @@
 import Foundation
 
 struct UserModel {
+    var name: String
     var email: String
     var phone: String
     
-    init(email: String, phone: String) {
+    init(name: String, email: String, phone: String) {
+        self.name = name
         self.email = email
         self.phone = phone
     }

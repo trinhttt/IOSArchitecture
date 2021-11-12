@@ -65,23 +65,15 @@
 				0E010AC5273D284E00FCE301 /* AppDelegate.swift */,
 				0E010AC7273D284E00FCE301 /* SceneDelegate.swift */,
 				0E010ADA273D28C400FCE301 /* DataAccess.swift */,
-				0E010AE7273D2AFA00FCE301 /* MVVM */,
+				0E010ADD273D2A4A00FCE301 /* UserModel.swift */,
+				0E010AE0273D2A6900FCE301 /* UserViewModel.swift */,
+				0E010AE3273D2A8700FCE301 /* UsersTableViewController.swift */,
 				0E010ACB273D284E00FCE301 /* Main.storyboard */,
 				0E010ACE273D285800FCE301 /* Assets.xcassets */,
 				0E010AD0273D285800FCE301 /* LaunchScreen.storyboard */,
 				0E010AD3273D285800FCE301 /* Info.plist */,
 			);
 			path = MVVMPattern;
-			sourceTree = "<group>";
-		};
-		0E010AE7273D2AFA00FCE301 /* MVVM */ = {
-			isa = PBXGroup;
-			children = (
-				0E010ADD273D2A4A00FCE301 /* UserModel.swift */,
-				0E010AE0273D2A6900FCE301 /* UserViewModel.swift */,
-				0E010AE3273D2A8700FCE301 /* UsersTableViewController.swift */,
-			);
-			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
